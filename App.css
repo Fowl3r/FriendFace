@@ -1,0 +1,13 @@
+
+body{
+  background-color: rgb(64,128,0);
+}
+
+.app{
+background-color: rgb(64,128,0);
+
+}
+
+.app__body{
+  display: flex;
+}

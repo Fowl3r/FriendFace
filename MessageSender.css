@@ -1,0 +1,75 @@
+.messageSender {
+    display:flex;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: rgb(250, 193, 7) ;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+.messageSender__top{
+    display:flex;                       /* Pushes Avatar in line */
+    border-bottom: 1px solid #eff2f5;
+    padding: 15px;
+}
+
+.messageSender__top > form {
+    flex: 1;
+    display: flex;
+}
+
+.messageSender__top > form > input {
+    outline-width: 0;               /* removes blue outline */
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 999px;       /* 999px = Rounded */
+    background-color: rgb(17,102,0);
+}
+
+.messageSender__top > form > button {
+    display:none;
+}
+
+@media (max-width:1200px) {
+    .messageSender__top > form > button {
+        display:visible;
+    }
+}
+
+.messageSender__input{
+    flex: 1;
+}
+
+.messageSender__bottom{
+    display:flex;
+    background-color: rgb(17,102,0);
+    justify-content: space-evenly;
+}
+
+.messageSender__option {
+height:20px;
+padding: 10px;
+display: flex;
+align-items:center;
+color: rgb(250, 193, 7);
+margin: 5px;
+}#ed2f6d
+
+.messageSender__option > h4 {
+    font-size: medium;
+    margin-left: 10px;
+    
+}
+
+.messageSender__option:hover {
+    background-color:rgb(250, 193, 7) ;
+    border-radius: 20px;
+    color: rgb(17,102,0);
+    cursor: pointer;
+}
+

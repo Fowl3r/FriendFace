@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    padding: 15px 20px ;
+    justify-content: space-between;
+    position: sticky;
+    background-color: rgb(17,102,0);
+    z-index: 100;
+    top: 0;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0, 75);
+    height:8vh;
+    /* width: 100vw; */
+
+}
+
+.header__left{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.header__left > img {
+    height: 10vh;
+}
+
+.header__input{
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 205, 7);
+    padding: 10px;
+    border-radius: 99px;
+}
+
+
+.header__input > input {
+    border: none;
+    background-color: #facd07;
+    color: rgb(5, 110, 47);
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    outline-width: 0;
+}
+
+.header__center{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+}
+
+.header__option > .MuiSvgIcon-root {            /* This is general class that Material UI gives all it's Icons */
+        color:rgb(250, 193, 7) ;
+}
+
+.header__option:hover > .MuiSvgIcon-root{
+    color: #ed2f6d;
+}
+
+.header__option--active > .MuiSvgIcon-root{
+    color: #ed2f6d
+}
+
+.header__option--active {
+    border-bottom: 4px solid #ed2f6d;
+}
+
+.header__option {
+    display:flex;
+    align-items: center;
+    padding: 0 25px;
+    cursor: pointer;
+
+}
+
+.header__option:hover {
+background-color: rgb(250, 205, 7);
+border-radius: 10px;
+align-items: center;
+padding: 0 25px;
+border-bottom: none;
+
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info > h4 {
+    color:rgb(250, 205, 7);
+    margin-left: 10px;
+}
+
+.header__right {
+    display: flex;                                          /* Having everything displayed in flex made the search shadow the right size as the entire height of header narrowed*/
+}
+
+.header__right > .MuiIconButton-root{
+    color: rgb(250, 193, 7);
+}
+
+@media (max-width: 500px) {
+    body{
+        max-width: 100%;
+    }
+}

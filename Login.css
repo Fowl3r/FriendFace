@@ -1,0 +1,30 @@
+
+.login{
+    display: grid;
+    place-items:center;
+    height: 100vh;
+    
+}
+
+.login > Button {
+    width: 300px;
+    background-color: rgb(250, 193, 7);
+    color: rgb(64,128,0);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login > Button:hover{
+    background-color: #ed2f6d;
+    color: rgb(64,128,0);
+}
+
+.login > div > img {
+    object-fit: contain;
+    height: 150px;
+}
+
+.login > div{
+display: flex;
+flex-direction: column;
+}
+
